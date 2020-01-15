@@ -61,3 +61,13 @@
 @keyframes come-in {
   to { transform: translateY(0); }
 }
+
+
+.fullvideo {
+    position: fixed;
+    right:0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    height:100%
+}
