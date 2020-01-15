@@ -19,6 +19,8 @@
 
 
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="animation.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -62,8 +64,8 @@
     </header>
 
     <!-- Experience Section -->
-    <section id="experience" class="projects-section bg-light">
-      <div class="container">
+    <section id="experience" class="projects-section bg-light module">
+      <div class="container module">
 
         <!-- The Evergreen Experience -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -80,9 +82,9 @@
         </div>
 
         <!-- Business Class -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+        <div class="row justify-content-center no-gutters module">
+          <div class="col-lg-6 sections" style="background: url(Assets/BusinessClass.jpg);">
+            <!--<img class="img-fluid" src="Assets/BusinessClass.jpg" alt="">-->
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
@@ -99,9 +101,9 @@
         </div>
 
         <!-- Economy Class -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+        <div class="row justify-content-center no-gutters module">
+          <div class="col-lg-6 sections" style="background: url(Assets/EconomyClass.jpg);">
+            <!--<img class="img-fluid" src="Assets/EconomyClass.jpg" alt="">-->
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
@@ -121,10 +123,15 @@
     <!-- Destinations Section -->
     <section id="destinations" class="projects-section bg-light">
       <div class="container">
+        <div class="featured-text text-center text-lg-left">
+          <h4>Evergreen Destinations</h4>
+
+          <p class="text-black-50 mb-0">Evergreen can take you to destinations anywhere in the Pacific Northwest.</p>
+        </div>
         <!-- Sea-Tac International Airport (Maybe a photo of the Space Needle) -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <div class="col-lg-6 sections" style="background: url(Assets/Seattle.jpg);">
+            <!--<img class="img-fluid" src="Assets/Seattle.jpg" alt="">-->
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
@@ -132,7 +139,7 @@
                 <div class="project-text w-100 my-auto text-center text-lg-left">
                   <h4 class="text-white">Sea-Tac International Airport</h4>
                   <p class="mb-0 text-white-50">This international airport has a large variety of fun activities to do in its vicinity, encompassing interests of all ages and sizes. You can go hot air ballooning at Seattle Ballooning, a destination only 2 miles from the airport, or if you want to go visit the Space Needle, the Seattle Light Rail Service within a mile of the airport allows you to do just that.
-                    For children, there is the Seattle Chocolate Factory Store and Angle Lake Park where they can enjoy playing in the sun. Those who are more mature can enjoy Boeing's Museum of Flight and go skydiving in IFLY's Indoor Skydiving facility. With all of these destinations within 5 miles of the airport, you're guarenteed to have a good time.
+                    For children, there is the Seattle Chocolate Factory Store and Angle Lake Park where they can enjoy playing in the sun. Those who are more mature can enjoy Boeing's Museum of Flight and go skydiving in IFLY's Indoor Skydiving facility. With all of these destinations within 5 miles of the airport, you're guaranteed to have a good time.
                    </p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
@@ -144,8 +151,8 @@
 
         <!-- Spokane International Airport  -->
         <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <div class="col-lg-6 sections" style="background: url(Assets/Spokane.jpg);">
+            <!--<img class="img-fluid" src="Assets/Spokane.jpg" alt="">-->
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
@@ -162,8 +169,8 @@
       </div>
       <!-- Portland International Airport -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+        <div class="col-lg-6 sections" style="background: url(Assets/Portland.jpg);">
+          <!--<img class="img-fluid" src="Assets/Portland.jpg" alt="">-->
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -182,8 +189,8 @@
 
       <!-- Project Four Row -->
       <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+        <div class="col-lg-6 sections" style="background: url(Assets/Eugene.jpg);">
+          <!--<img class="img-fluid" src="Assets/Eugene.png" alt="">-->
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -200,8 +207,8 @@
       </div>
     <!-- Project Five Row -->
     <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-      <div class="col-lg-6">
-        <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+      <div class="col-lg-6 sections" style="background: url(Assets/Medford.jpg);">
+        <!--<img class="img-fluid" src="Assets/Medford.jpg" alt="">-->
       </div>
       <div class="col-lg-6">
         <div class="bg-black text-center h-100 project">
@@ -219,8 +226,8 @@
 
     <!-- Project Six Row -->
     <div class="row justify-content-center no-gutters">
-      <div class="col-lg-6">
-        <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+      <div class="col-lg-6 sections" style="background: url(Assets/Boise.jpg);">
+        <!--<img class="img-fluid" src="Assets/Boise.jpg" alt="">-->
       </div>
       <div class="col-lg-6 order-lg-first">
         <div class="bg-black text-center h-100 project">
@@ -240,7 +247,7 @@
     </section>
 
     <!-- Booking Section -->
-    <section id="booking" class="about-section text-center">
+    <section id="booking" class="about-section text-center sections" style="background: url(Assets/BookFlight.jpg);">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -321,7 +328,7 @@
             </form>
           </div>
         </div>
-        <img src="img/ipad.png" class="img-fluid" alt="">
+        <!--<img src="assets/BookFlight.jpg" class="img-fluid" alt="">-->
       </div>
     </section>
 
