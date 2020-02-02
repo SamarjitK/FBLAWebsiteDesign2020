@@ -5,7 +5,7 @@
     <script src="js.bootstrap.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Grayscale -->
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale-backup.min.css" rel="stylesheet">
 
 
     <link rel="stylesheet" href="styles.css" type="text/css">
@@ -24,7 +24,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Evergreen Airlines</a>
+        <a class="navbar-brand js-scroll-trigger" href="#home">Evergreen Airlines</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -35,6 +35,9 @@
               <a class="nav-link js-scroll-trigger" href="#home">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#booking">Flights</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
@@ -42,9 +45,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#travel">Travel Tips</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#booking">Flights</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#prime">Prime</a>
@@ -58,7 +58,7 @@
     </nav>
 
     <!-- Video -->
-    <div class="section">
+    <div class="section" id="home">
       <div class="video-container">
         <video autoplay loop muted class="fullvideo">
             <source src="Assets\Airplanewing1.mp4" type="video/mp4">
@@ -91,6 +91,117 @@
         </div>
       </header>
     </section>-->
+    <!-- Booking Section -->
+    <section id="booking" class="about-section text-center sections" style="background: url(Assets/BookFlight.jpg);">
+      <div class="container module">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">Book your Flight</h2>
+            <p class="text-white-50">Choose from destinations in the PNW</p>
+            <form class = "text-white-50">
+              <div class="row">
+                <div class="form-group form-check col">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">One-way</label>
+                </div>
+                <div class="form-group form-check col">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Business Class</label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class="form-group col">
+                  <label for="exampleFormControlSelect2">From</label>
+                  <select class="form-control" id="Departure">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Spokane">Spokane</option>
+                    <option value="Portland">Portland</option>
+                    <option value="Medford">Medford</option>
+                    <option value="Eugene">Eugene</option>
+                    <option value="Boise">Boise</option>
+                  </select>
+                </div>
+                <div class="form-group col">
+                  <label for="exampleFormControlSelect2">To</label>
+                  <select class="form-control" id="Arrival">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Spokane">Spokane</option>
+                    <option value="Portland">Portland</option>
+                    <option value="Medford">Medford</option>
+                    <option value="Eugene">Eugene</option>
+                    <option value="Boise">Boise</option>
+                  </select>
+                </div>
+              </div>
+              <div class = "row">
+                <div class="form-group col">
+                  <label>Departure</label>
+                  <input type="date" class="form-control" id="DepartureDate">
+                </div>
+                <div class="form-group col">
+                  <label>Return</label>
+                  <input type="date" class="form-control" id="ArrivalDate">
+                </div>
+              </div>
+              <div class = "row">
+                <div class="form-group col">
+                  <label for="exampleFormControlSelect2">Adults</label>
+                  <select class="form-control" id="Adults">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="form-group col">
+                  <label for="exampleFormControlSelect2">Children</label>
+                  <select class="form-control" id="Children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable" onclick="bookFlight()">Find Flights</button>
+            </form>
+          </div>
+        </div>
+        <!--<img src="assets/BookFlight.jpg" class="img-fluid" alt="">-->
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalScrollableTitle">Flight Information</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2>Departure Information:</h2>
+            <h3 id="departstuff"></h3><br>
+            <h2>Arrival Information:</h2>
+            <h3 id="arrivestuff"></h3><br>
+            <h2>Ticket(s) Cost:</h2>
+            <h2 id="cost"></h2><br>
+            Email Address: <input type="text"></input>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Email Flight Confirmation</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Experience Section -->
     <section id="experience" class="projects-section bg-light module">
@@ -278,17 +389,15 @@
   <!-- Travel Tips Section -->
   <section id = "travel" class="contact-section bg-black">
     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-      <div class="col-xl-6 col-lg-6">
+      <!--<div class="col-xl-6 col-lg-6">
         <img class="img-fluid mb-3 mb-lg-0" src="img/suitcase.jpg" alt="">
-      </div>
-      <div class="col-xl-6 col-lg-6">
+      </div>-->
+      <div class="col-xl-12 col-lg-12">
         <div class="featured-text text-center text-lg-center">
-          <h4 align=center>Travel Tips!</h4>
+          <h4 class="text-white mb-5" align="center">Travel Tips!</h4>
         </div>
       </div>
     </div>
-
-    <h1 align=center>Travel Tips!</h1>
       <h1></h1>
       <hr>
 
@@ -323,91 +432,7 @@
 
   </section>
 
-    <!-- Booking Section -->
-    <section id="booking" class="about-section text-center sections" style="background: url(Assets/BookFlight.jpg);">
-      <div class="container module">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Book your Flight</h2>
-            <p class="text-white-50">Choose from destinations in the PNW</p>
-            <form class = "text-white-50">
-              <div class="row">
-                <div class="form-group form-check col">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">One-way</label>
-                </div>
-                <div class="form-group form-check col">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Use Miles</label>
-                </div>
-              </div>
-              <div class = "row">
-                <div class="form-group col">
-                  <label for="exampleFormControlSelect2">From</label>
-                  <select class="form-control" id="exampleFormControlSelect2">
-                    <option value="Seattle">Seattle</option>
-                    <option value="Spokane">Spokane</option>
-                    <option value="Portland">Portland</option>
-                    <option value="Medford">Medford</option>
-                    <option value="Eugene">Eugene</option>
-                    <option value="Boise">Boise</option>
-                  </select>
-                </div>
-                <div class="form-group col">
-                  <label for="exampleFormControlSelect2">To</label>
-                  <select class="form-control" id="exampleFormControlSelect2">
-                    <option value="Seattle">Seattle</option>
-                    <option value="Spokane">Spokane</option>
-                    <option value="Portland">Portland</option>
-                    <option value="Medford">Medford</option>
-                    <option value="Eugene">Eugene</option>
-                    <option value="Boise">Boise</option>
-                  </select>
-                </div>
-              </div>
-              <div class = "row">
-                <div class="form-group col">
-                  <label>Departure</label>
-                  <input type="date" class="form-control">
-                </div>
-                <div class="form-group col">
-                  <label>Return</label>
-                  <input type="date" class="form-control">
-                </div>
-              </div>
-              <div class = "row">
-                <div class="form-group col">
-                  <label for="exampleFormControlSelect2">Adults</label>
-                  <select class="form-control" id="exampleFormControlSelect2">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                  </select>
-                </div>
-                <div class="form-group col">
-                  <label for="exampleFormControlSelect2">Children</label>
-                  <select class="form-control" id="exampleFormControlSelect2">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                  </select>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Find Flights</button>
-            </form>
-          </div>
-        </div>
-        <!--<img src="assets/BookFlight.jpg" class="img-fluid" alt="">-->
-      </div>
-    </section>
+
 
     <!-- Prime Program Section -->
     <section id = "prime" class="contact-section bg-black">
@@ -464,7 +489,7 @@
                   <img src="Assets/Pilot.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Pilots</h5>
-                    <a href="#" class="btn btn-primary">View Openings</a>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
                   </div>
                 </div>
               </div>
@@ -473,7 +498,7 @@
                   <img src="Assets/Attendant.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Flight Attendants</h5>
-                    <a href="#" class="btn btn-primary">View Openings</a>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
                   </div>
                 </div>
               </div>
@@ -482,7 +507,7 @@
                   <img src="Assets/Corporate.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Corporate</h5>
-                    <a href="#" class="btn btn-primary">View Openings</a>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
                   </div>
                 </div>
               </div>
@@ -491,7 +516,7 @@
                   <img src="Assets/Software.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Software and Technology</h5>
-                    <a href="#" class="btn btn-primary">View Openings</a>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
                   </div>
                 </div>
               </div>
@@ -500,7 +525,7 @@
                   <img src="Assets/Service.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Customer Service</h5>
-                    <a href="#" class="btn btn-primary">View Openings</a>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
                   </div>
                 </div>
               </div>
@@ -509,7 +534,7 @@
                   <img src="Assets/Intern.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Interns</h5>
-                    <a href="#" class="btn btn-primary">View Openings</a>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
                   </div>
                 </div>
               </div>
@@ -518,6 +543,32 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalScrollableTitle1">Apply for a Job</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            First Name: <input type="text"></input><br><br>
+            Last Name: <input type="text"></input><br><br>
+            Previous experience: <input type="text"></input><br><br>
+            Phone Number: <input type="text"></input><br><br>
+            Email Address:  <input type="text"></input><br><br>
+            (Applicants will be contacted within 1-2 business days about job openings and interviews.)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save Application</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact-section bg-black">
@@ -529,7 +580,7 @@
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Address</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                <div class="small text-black-50">1000 Evergreen Blvd, Seattle WA</div>
               </div>
             </div>
           </div>
@@ -540,7 +591,7 @@
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
+                  <a href="#">corporate@evergreenair.com</a>
                 </div>
               </div>
             </div>
@@ -573,9 +624,31 @@
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
       <div class="container module">
-        Copyright &copy; Evergreen Airlines 2019
+        Copyright &copy; Evergreen Airlines 2020<br><br>
+        <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable2">View Documentation</a>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalScrollableTitle2">Documentation</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            PUT ALL YOUR STUFF HERE, SEPARATE EACH LINE WITH TWO BR TAGS
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

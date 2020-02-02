@@ -49,3 +49,16 @@ win.scroll(function(event) {
   });
 
 });
+
+function bookFlight(){
+  var departure = document.getElementById('Departure').value;
+  var arrival = document.getElementById('Arrival').value;
+  var departDate = document.getElementById('DepartureDate').value;
+  var arriveDate = document.getElementById('ArrivalDate').value;
+  var adults = document.getElementById('Adults').value;
+  var children = document.getElementById('Children').value;
+
+  document.getElementById('departstuff').innerHTML = departure + " at 5:00 PM on " + departDate;
+  document.getElementById('arrivestuff').innerHTML = arrival + " at 5:00 PM on " + arriveDate;
+  document.getElementById('cost').innerHTML = "$" + (150 * children + 200 * adults);
+}
