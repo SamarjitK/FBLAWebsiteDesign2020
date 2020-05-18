@@ -63,3 +63,6 @@ function bookFlight(){
   document.getElementById('arrivestuff').innerHTML = arrival + " at 5:00 PM on " + arriveDate;
   document.getElementById('cost').innerHTML = "$" + (150 * children + 200 * adults);
 }
+function Openings(jobName){
+  document.getElementById('exampleModalScrollableTitle1').innerHTML=jobName;
+}

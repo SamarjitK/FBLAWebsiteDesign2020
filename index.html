@@ -391,7 +391,7 @@
     </section>
 
   <!-- Travel Tips Section -->
-  <section id = "travel" class="contact-section bg-black">
+  <section id = "travel" class="about-section bg-light module">
     <div class="row align-items-center no-gutters mb-4 mb-lg-5">
       <!--<div class="col-xl-6 col-lg-6">
         <img class="img-fluid mb-3 mb-lg-0" src="img/suitcase.jpg" alt="">
@@ -402,45 +402,23 @@
         </div>
       </div>
     </div>
-      <h1></h1>
-      <hr>
-
-      <hr size = 10>
-
-      <div class="row justify-content-center no-gutters module">
+      <div class="row justify-content-center no-gutters module" style="padding:5%;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2jrv9TJfMCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-
-      <h1></h1>
-      <hr>
-
-      <hr size = 10>
-
-      <div class="row justify-content-center no-gutters module">
+      <div class="row justify-content-center no-gutters module" style="padding:5%;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PQefqx7rAS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-
-      <h1></h1>
-      <hr>
-
-      <hr size = 10>
-
-      <div class="row justify-content-center no-gutters module">
+      <div class="row justify-content-center no-gutters module" style="padding:5%;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HhaJBpNr5zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-
-      <h1></h1>
-      <hr>
-
-      <hr size = 10>
 
   </section>
 
 
 
     <!-- Prime Program Section -->
-    <section id = "prime" class="contact-section bg-black">
-      <div class="container">
+    <section id = "prime" class="contact-section bg-black module" style="background-image:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, .9));">
+      <div class="container" style="padding:5%;">
         <h2 class="text-white mb-5">Evergreen Prime: Get rewarded for traveling</h2>
         <div class="row module">
           <div class="col-md-4 mb-3 mb-md-0">
@@ -448,7 +426,7 @@
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0">Evergreen Prime Discount</h4>
                 <h4 class="text-uppercase m-0">500 Miles/year</h4>
-                <hr class="my-4">
+                <br>
                 <div class="small text-black-50">
                   Our lowest, cheapest rewards tier: Get one extra check-in bag per flight, and hassle-free boarding
                 </div>
@@ -460,7 +438,7 @@
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0">Evergreen Prime</h4>
                 <h4 class="text-uppercase m-0">2000 Miles/year</h4>
-                <hr class="my-4">
+                <br>
                 <div class="small text-black-50">Our most popular rewards tier: Experience Evergreen Lounges, one free upgrade per month, skip the check-in and boarding lines on every flight</div>
               </div>
             </div>
@@ -470,7 +448,7 @@
               <div class="card-body text-center">
                 <h4 class="text-uppercase m-0">Evergreen Prime Plus</h4>
                 <h4 class="text-uppercase m-0">5000 Miles/year</h4>
-                <hr class="my-4">
+                <br>
                 <div class="small text-black-50">For our most frequent travelers: Experience the best of Evergreen Elite Lounges, unlimited free upgrades, full course meals on all flights, and much more</div>
               </div>
             </div>
@@ -481,7 +459,7 @@
     </section>
 
     <!-- Careers Section -->
-    <section id="careers" class="signup-section">
+    <section id="careers" class="projects-section module" style="background-image:linear-gradient(rgba(0, 0, 0, .9),rgba(0, 0, 0, 0));">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -490,55 +468,89 @@
             <div class="row row-cols-1 row-cols-md-3 module">
               <div class="col mb-4">
                 <div class="card h-100">
-                  <img src="Assets/Pilot.jpg" class="card-img-top" alt="...">
+                  <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                      <img src="Assets/Pilot.jpg" alt="">
+                      <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                          <p class="uk-h4 uk-margin-remove" style="color:black;">Pilots</p>
+                      </div>
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Pilots</h5>
-                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
+                    <p class="card-title">Fly through the skies of the Pacific Northwest.</p>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Application: Pilot`)">Apply</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                      <img src="Assets/Attendant.jpg" alt="">
+                      <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                          <p class="uk-h4 uk-margin-remove" style="color:black;">Flight Attendants</p>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Join the Evergreen crew, forming the face of the company.</p>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Application: Flight Attendant`)">Apply</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                      <img src="Assets/Corporate.jpg" alt="">
+                      <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                          <p class="uk-h4 uk-margin-remove" style="color:black;">Corporate</p>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Work at Evergreen Tower in our Seattle HQ.</p>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Application: Corporate`)">Apply</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                      <img src="Assets/software.jpg" alt="">
+                      <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                          <p class="uk-h4 uk-margin-remove" style="color:black;">Software and Tech</p>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Be part of our journey into the future of technology.</p>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Application: Software and Tech`)">Apply</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4">
+                <div class="card h-100">
+                  <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                      <img src="Assets/Service.jpg" alt="">
+                      <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                          <p class="uk-h4 uk-margin-remove" style="color:black;">Customer Service</p>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">Represent Evergreen as a liason with our cutomers</p>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Application: Customer Service`)">Apply</a>
                   </div>
                 </div>
               </div>
               <div class="col mb-4">
                 <div class="card h-100">
-                  <img src="Assets/Attendant.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Flight Attendants</h5>
-                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
+                  <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                      <img src="Assets/Intern.jpg" alt="">
+                      <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+                          <p class="uk-h4 uk-margin-remove" style="color:black;">Interns</p>
+                      </div>
                   </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="Assets/Corporate.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Corporate</h5>
-                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="Assets/Software.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Software and Technology</h5>
-                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="Assets/Service.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Customer Service</h5>
-                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col mb-4">
-                <div class="card h-100">
-                  <img src="Assets/Intern.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Interns</h5>
-                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings()">View Openings</a>
+                    <p class="card-title">Explore internships in every department of Evergreen.</p>
+                    <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Internship Application`)">Apply</a>
                   </div>
                 </div>
               </div>
@@ -553,7 +565,7 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalScrollableTitle1">Apply for a Job</h3>
+            <h3 class="modal-title" id="exampleModalScrollableTitle1"></h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -575,7 +587,7 @@
     </div>
 
     <!-- Contact Section -->
-    <section class="contact-section bg-black">
+    <section class="contact-section bg-light">
       <div class="container module">
         <div class="row">
           <div class="col-md-4 mb-3 mb-md-0">
@@ -583,7 +595,7 @@
               <div class="card-body text-center">
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
+                <!--<hr class="my-4">-->
                 <div class="small text-black-50">1000 Evergreen Blvd, Seattle WA</div>
               </div>
             </div>
@@ -593,7 +605,7 @@
               <div class="card-body text-center">
                 <i class="fas fa-envelope text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
+                <!--<hr class="my-4">-->
                 <div class="small text-black-50">
                   <a href="#">corporate@evergreenair.com</a>
                 </div>
@@ -605,7 +617,7 @@
               <div class="card-body text-center">
                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
+                <!--<hr class="my-4">-->
                 <div class="small text-black-50">+1 (555) 902-8832</div>
               </div>
             </div>
@@ -626,7 +638,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
+    <footer class="bg-light small text-center text-white-50">
       <div class="container module">
         Copyright &copy; Evergreen Airlines 2020<br><br>
         <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable2">View Documentation</a>
@@ -658,7 +670,8 @@
         </div>
       </div>
     </div>
-
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-ee0b0dcf-5132-4869-a32b-8e24066c71d3"></div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
