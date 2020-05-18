@@ -3,7 +3,7 @@
   <head>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <script src="js.bootstrap.js"></script>
@@ -183,7 +183,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title" id="exampleModalScrollableTitle">Flight Information</h4>
@@ -192,15 +192,56 @@
             </button>
           </div>
           <div class="modal-body">
-            <h2>Departure Information:</h2>
-            <h3 id="departstuff"></h3><br>
-            <h2>Arrival Information:</h2>
-            <h3 id="arrivestuff"></h3><br>
-            <h2>Ticket(s) Cost:</h2>
-            <h2 id="cost"></h2><br>
+            <h4>Ticket(s) Cost Estimate: <strong><span id="cost"></span></strong></h4><br>
+            <div class="container"><div class="row"><div class="col-md-6">
+            <table class="table table-bordered table-striped table-hover table-sm">
+              <thead class="thead-light">
+                <tr>
+                  <td colspan="3">Departure Info</td>
+                </tr>
+              </thead>
+              <tr>
+                <td><span class="material-icons">flight_takeoff</span></td>
+                <td id="departCity"></td>
+                <td><span class="material-icons">schedule</span> 5:00 PM</td>
+              </tr>
+              <tr>
+                <td><span class="material-icons">flight_land</span></td>
+                <td id="arriveCity"></td>
+                <td><span class="material-icons">schedule</span> 6:15 PM</td>
+              </tr>
+              <tr>
+                <td><span class="material-icons">today</span></td>
+                <td colspan="2" id="departDate"></td>
+              </tr>
+            </table></div><div class="col-md-6">
+            <table class="table table-bordered table-striped table-hover table-sm">
+              <thead class="thead-light">
+                <tr>
+                  <td colspan="3">Arrival Info</td>
+                </tr>
+              </thead>
+              <tr>
+                <td><span class="material-icons">flight_takeoff</span></td>
+                <td id="arriveCity1"></td>
+                <td><span class="material-icons">schedule</span> 10:20 AM</td>
+              </tr>
+              <tr>
+                <td><span class="material-icons">flight_land</span></td>
+                <td id="departCity1"></td>
+                <td><span class="material-icons">schedule</span> 11:35 AM</td>
+              </tr>
+              <tr>
+                <td><span class="material-icons">today</span></td>
+                <td colspan="2" id="arriveDate"></td>
+              </tr>
+            </table></div></div></div>
             Email Address: <input type="text"></input>
           </div>
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <center><div class="elfsight-app-a5d2c5d8-5a86-41f9-a7dc-5c875ee51c4e"></div></center>
           <div class="modal-footer">
+            <input type="text"></input>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Email Flight Confirmation</button>
           </div>
         </div>

@@ -59,9 +59,14 @@ function bookFlight(){
   var adults = document.getElementById('Adults').value;
   var children = document.getElementById('Children').value;
 
-  document.getElementById('departstuff').innerHTML = departure + " at 5:00 PM on " + departDate;
-  document.getElementById('arrivestuff').innerHTML = arrival + " at 5:00 PM on " + arriveDate;
   document.getElementById('cost').innerHTML = "$" + (150 * children + 200 * adults);
+  document.getElementById('departCity').innerHTML = departure;
+  document.getElementById('arriveCity').innerHTML = arrival;
+  document.getElementById('departCity1').innerHTML = departure;
+  document.getElementById('arriveCity1').innerHTML = arrival;
+  document.getElementById('departDate').innerHTML = "" + departDate;
+  document.getElementById('arriveDate').innerHTML = "" + arriveDate;
+  document.getElementById('exampleModalScrollableTitle').innerHTML = departure + ` <span class="material-icons">flight</span> ` + arrival
 }
 function Openings(jobName){
   document.getElementById('exampleModalScrollableTitle1').innerHTML=jobName;
