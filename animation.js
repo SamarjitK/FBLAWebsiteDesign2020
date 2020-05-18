@@ -50,6 +50,7 @@ win.scroll(function(event) {
 
 });
 
+
 function bookFlight(){
   var departure = document.getElementById('Departure').value;
   var arrival = document.getElementById('Arrival').value;
