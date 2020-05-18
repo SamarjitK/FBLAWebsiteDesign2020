@@ -575,7 +575,7 @@
                       </div>
                   </div>
                   <div class="card-body">
-                    <p class="card-title">Represent Evergreen as a liason with our cutomers</p>
+                    <p class="card-title">Represent Evergreen as a liason with our customers.</p>
                     <a class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalScrollable1" onClick="Openings(`Application: Customer Service`)">Apply</a>
                   </div>
                 </div>
@@ -602,7 +602,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h3 class="modal-title" id="exampleModalScrollableTitle1"></h3>
@@ -611,13 +611,48 @@
             </button>
           </div>
           <div class="modal-body">
-            First Name: <input type="text"></input><br><br>
-            Last Name: <input type="text"></input><br><br>
-            Previous experience: <input type="text"></input><br><br>
-            Phone Number: <input type="text"></input><br><br>
-            Email Address:  <input type="text"></input><br><br>
             (Applicants will be contacted within 1-2 business days about job openings and interviews.)
+            <form class="uk-form-horizontal uk-margin-large">
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-horizontal-text">First Name</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-horizontal-text" type="text">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-horizontal-text">Last Name</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-horizontal-text" type="text">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-horizontal-text">Previous Experience</label>
+                  <div class="uk-form-controls">
+                      <textarea class="uk-textarea" rows="4" id="form-horizontal-text"></textarea>
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-horizontal-text">Phone Number</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-horizontal-text" type="text" placeholder="me@example.com">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-horizontal-text">Phone Number</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-horizontal-text" type="text" placeholder="(123)-456-7890">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-horizontal-text">Upload your resume, or any other documents:</label>
+                  <div class="uk-form-controls" uk-form-custom="target: true">
+                      <input type="file">
+                      <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Select resume file">
+                  </div>
+              </div>
+            </form>
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save Application</button>
@@ -696,6 +731,7 @@
             </button>
           </div>
           <div class="modal-body">
+            <br> All materials used are open source and authorized for commercial use. </br>
             <br> https://www.thrillist.com/travel/nation/best-rocky-mountain-towns </br>
             <br> https://www.lohrrealestate.com/why-people-across-country-moving-eugene-oregon/ </br>
             <br> https://travelfuntu.com/top-attractions/seattles-space-needle-get-glass-floored-dining-room/ </br>
@@ -703,6 +739,9 @@
             <br> https://www.shutterstock.com/search/spokane+washington </br>
             <br> https://www.intellidex.co.za/media/intellidex-in-the-media/saa-in-business-rescue/ </br>
             <br> https://www.insider.com/delta-one-business-class-flight-review-jfk-berlin-photos-767-2019-11 </br>
+            <br> CSS Frameworks: Grayscale, Bootstrap, UIKit </br>
+            <br> Animations: JQuery </br>
+            <br> All materials used are open source and authorized for commercial use. </br>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
